@@ -36,6 +36,7 @@ async function api() {
         return data;
 
     } catch (error) {
+        dataSpace.innerHTML = 'INSIRA UM CEP VALIDO';
         return error.message;
     }
 }
