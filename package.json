@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite --open"
+    "dev": "vite --open",
+    "build": "vite build"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/Gustavo-Oliveira7/buscaCEP.git"
+    
   },
   "keywords": [],
   "author": "",

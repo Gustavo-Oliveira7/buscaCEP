@@ -32,8 +32,7 @@ async function api() {
     try {
         const response = await fetch(apiUrl);
         const data = await response.json();
-        console.log(data);
-        dataSpace.innerHTML = JSON.stringify(data);
+        dataSpace.innerHTML = `Estado: ${data.uf} \nCidade: ${data.localidade} \nPopulação: ${data.ibge} \nDDD: ${data.ddd}  \nBairro: ${data.bairro}  \nRua: ${data.logradouro}`;
         return data;
 
     } catch (error) {
