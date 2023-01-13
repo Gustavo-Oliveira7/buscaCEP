@@ -1,0 +1,25 @@
+{
+  "name": "buscacep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Gustavo-Oliveira7/buscaCEP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gustavo-Oliveira7/buscaCEP/issues"
+  },
+  "homepage": "https://github.com/Gustavo-Oliveira7/buscaCEP#readme",
+  "dependencies": {
+    "vite": "^4.0.4"
+  },
+  "type": "module"
+}
