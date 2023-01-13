@@ -23,9 +23,9 @@ const dataSpace = document.createElement('pre');
 main.appendChild(dataSpace);
 
 
-button.addEventListener('click', alguma);
+button.addEventListener('click', api);
 
-async function alguma() {
+async function api() {
     const inputValue = input.value;
     const apiUrl = `https://viacep.com.br/ws/${inputValue}/json/`;
 
