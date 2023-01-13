@@ -18,3 +18,25 @@ main.appendChild(button);
 const subTittleData = document.createElement('h3');
 subTittleData.innerText = 'Dados:';
 main.appendChild(subTittleData);
+
+const dataSpace = document.createElement('pre');
+main.appendChild(dataSpace);
+
+
+button.addEventListener('click', alguma);
+
+async function alguma() {
+    const inputValue = input.value;
+    const apiUrl = `https://viacep.com.br/ws/${inputValue}/json/`;
+
+    try {
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+        console.log(data);
+        dataSpace.innerHTML = JSON.stringify(data);
+        return data;
+
+    } catch (error) {
+        return error.message;
+    }
+}
